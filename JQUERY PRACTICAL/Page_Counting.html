@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    
+    <script>
+        function counter() {
+            var counting = setInterval(function () {
+                var c = parseInt($(".counting").text());
+                $('.counting').text((++c).toString());
+                if (c == 950) {
+                    clearInterval(counting);
+                }
+            }, 50)
+        }
+        counter(); 
+    </script>
+
+    <style>
+        .counting {
+            color: blue;
+            background-color: yellow;
+            border: 2px solid red;
+            height: 200px;
+            width: 200px;
+            margin: 150px auto;
+            display: grid;
+            justify-items: center;
+            align-content: center;
+            font-size: 35px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="counting">1</div>
+</body>
+
+</html>

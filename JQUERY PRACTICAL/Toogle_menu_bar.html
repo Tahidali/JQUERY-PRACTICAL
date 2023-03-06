@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="01_style.css" /> -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+
+  <script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("a").toggle(2000);  
+        })
+    })
+  </script>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      display: none;
+    }
+    li {
+      list-style: none;
+    }
+    .container .menu-p {
+      padding: 30px;
+      background-color: rgba(255, 255, 0, 0.621);
+    }
+    .container .menu-a {
+      /* display: flex; */
+      justify-content: space-between;
+      /* padding-left: 40px; */
+      background-color: rgb(80, 165, 255);
+      position: fixed;
+      top: 0px;
+      width: 96%;
+    }
+    .menu-p .logo {
+      background-color: turquoise;
+    }
+
+    .menu-p .menu-f {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 40px;
+      color: white;
+    }
+    .menu-p .menu-f ul {
+      display: flex;
+      gap: 40px;
+    }
+    button {
+        float: right;
+        top: 0px;
+        padding: 5px;
+        background-color: black;
+        color: red;
+        border-radius: 5px;
+    }
+    body {
+      background: url(../CSS/hero1.jpg);
+      height: 900px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+  <body>
+    <section>
+      <div class="container">
+        <div class="menu-p">
+          <div class="menu-f">
+            <h2>Menu</h2>
+            <ul>
+              <li><a href=""> About</a></li>
+              <li><a href="">Help</a></li>
+              <li><a href="">Service</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+            <button id="btn1">Click</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

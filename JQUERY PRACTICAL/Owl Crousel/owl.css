@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.padding {
+    padding: 40px;
+}
+.logo {
+    text-align: center;
+    padding: 30px;
+}
+.logo h4 {
+    font-weight: 500;
+    color: orangered;
+}
+.flex {
+    display: flex;
+    padding: 30px;
+    gap: 70px;
+}
+span {
+    color: orangered;
+    font-size: 30px;
+    padding: 10px;
+}
+.containt  {
+    height: 400px;
+    width: 400px;
+}
+.img1 {
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+    width: 15%;
+}
+.img1 img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
